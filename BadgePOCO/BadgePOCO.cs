@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClaimsRepo
+namespace BadgeClass.POCO
 {
-    public class Class1
+    public class BadgePOCO
     {
     }
 }

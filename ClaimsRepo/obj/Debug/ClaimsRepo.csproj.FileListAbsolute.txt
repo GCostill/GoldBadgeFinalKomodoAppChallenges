@@ -1,0 +1,5 @@
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\ClaimsRepo\bin\Debug\ClaimsRepo.dll
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\ClaimsRepo\bin\Debug\ClaimsRepo.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\ClaimsRepo\obj\Debug\ClaimsRepo.csproj.CoreCompileInputs.cache
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\ClaimsRepo\obj\Debug\ClaimsRepo.dll
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\ClaimsRepo\obj\Debug\ClaimsRepo.pdb

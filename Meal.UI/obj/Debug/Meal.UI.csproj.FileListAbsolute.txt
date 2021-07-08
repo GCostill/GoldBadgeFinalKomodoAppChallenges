@@ -1,0 +1,7 @@
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Meal.UI\bin\Debug\Meal.UI.exe.config
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Meal.UI\bin\Debug\Meal.UI.exe
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Meal.UI\bin\Debug\Meal.UI.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Meal.UI\obj\Debug\Meal.UI.csproj.AssemblyReference.cache
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Meal.UI\obj\Debug\Meal.UI.csproj.CoreCompileInputs.cache
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Meal.UI\obj\Debug\Meal.UI.exe
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Meal.UI\obj\Debug\Meal.UI.pdb

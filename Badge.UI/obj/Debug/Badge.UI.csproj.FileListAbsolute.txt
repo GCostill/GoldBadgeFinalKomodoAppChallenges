@@ -1,0 +1,7 @@
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Badge.UI\bin\Debug\Badge.UI.exe.config
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Badge.UI\bin\Debug\Badge.UI.exe
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Badge.UI\bin\Debug\Badge.UI.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Badge.UI\obj\Debug\Badge.UI.csproj.AssemblyReference.cache
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Badge.UI\obj\Debug\Badge.UI.csproj.CoreCompileInputs.cache
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Badge.UI\obj\Debug\Badge.UI.exe
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Badge.UI\obj\Debug\Badge.UI.pdb

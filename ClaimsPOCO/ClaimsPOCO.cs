@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MenuItemRepo
+namespace ClaimsClass.POCO
 {
-    public class Class1
+    public class ClaimsPOCO
     {
     }
 }
