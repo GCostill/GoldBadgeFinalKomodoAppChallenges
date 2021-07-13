@@ -1,0 +1,6 @@
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\MenuItemPOCO\bin\Debug\MenuItemPOCO.dll
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\MenuItemPOCO\bin\Debug\MenuItemPOCO.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\MenuItemPOCO\obj\Debug\MealClass.POCO.csproj.AssemblyReference.cache
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\MenuItemPOCO\obj\Debug\MealClass.POCO.csproj.CoreCompileInputs.cache
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\MenuItemPOCO\obj\Debug\MenuItemPOCO.dll
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\MenuItemPOCO\obj\Debug\MenuItemPOCO.pdb

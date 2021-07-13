@@ -43,11 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClaimsProgram.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClaimsPOCO\ClaimsClass.POCO.csproj">
+      <Project>{3D59F1D2-9A59-4F10-A12F-FE157FB05F91}</Project>
+      <Name>ClaimsClass.POCO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClaimsRepo\ClaimsClass.Repo.csproj">
+      <Project>{37701676-60F3-4161-A519-A95FEBA9D75E}</Project>
+      <Name>ClaimsClass.Repo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

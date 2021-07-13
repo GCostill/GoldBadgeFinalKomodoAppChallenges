@@ -21,17 +21,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaimsUnitTest", "ClaimsUni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadgeUnitTest", "BadgeUnitTest\BadgeUnitTest.csproj", "{FBCB1EE5-457B-484F-916F-6CB90B6BDB4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuItemPOCO", "MenuItemPOCO\MenuItemPOCO.csproj", "{0E1269BC-5621-431F-AF40-E66212940196}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MealClass.POCO", "MenuItemPOCO\MealClass.POCO.csproj", "{0E1269BC-5621-431F-AF40-E66212940196}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuItemRepo", "MenuItemRepo\MenuItemRepo.csproj", "{2FBC75FC-DA50-472D-B307-4762913F809A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MealClass.Repo", "MenuItemRepo\MealClass.Repo.csproj", "{2FBC75FC-DA50-472D-B307-4762913F809A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaimsPOCO", "ClaimsPOCO\ClaimsPOCO.csproj", "{3D59F1D2-9A59-4F10-A12F-FE157FB05F91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaimsClass.POCO", "ClaimsPOCO\ClaimsClass.POCO.csproj", "{3D59F1D2-9A59-4F10-A12F-FE157FB05F91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaimsRepo", "ClaimsRepo\ClaimsRepo.csproj", "{37701676-60F3-4161-A519-A95FEBA9D75E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaimsClass.Repo", "ClaimsRepo\ClaimsClass.Repo.csproj", "{37701676-60F3-4161-A519-A95FEBA9D75E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadgePOCO", "BadgePOCO\BadgePOCO.csproj", "{392722FE-846F-4FD1-86B9-38DF614384DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadgeClass.POCO", "BadgePOCO\BadgeClass.POCO.csproj", "{392722FE-846F-4FD1-86B9-38DF614384DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadgeRepo", "BadgeRepo\BadgeRepo.csproj", "{76E27910-AE0D-4242-B2FA-9797B7FFB6F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadgeClass.Repo", "BadgeRepo\BadgeClass.Repo.csproj", "{76E27910-AE0D-4242-B2FA-9797B7FFB6F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,6 @@
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\BadgePOCO\bin\Debug\BadgePOCO.dll
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\BadgePOCO\bin\Debug\BadgePOCO.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\BadgePOCO\obj\Debug\BadgeClass.POCO.csproj.AssemblyReference.cache
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\BadgePOCO\obj\Debug\BadgeClass.POCO.csproj.CoreCompileInputs.cache
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\BadgePOCO\obj\Debug\BadgePOCO.dll
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\BadgePOCO\obj\Debug\BadgePOCO.pdb

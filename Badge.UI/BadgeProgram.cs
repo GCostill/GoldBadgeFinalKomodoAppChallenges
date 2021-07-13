@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Badge.UI
 {
-    class Program
+    class BadgeProgram
     {
         static void Main(string[] args)
         {

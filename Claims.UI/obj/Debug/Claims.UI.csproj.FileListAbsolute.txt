@@ -5,3 +5,8 @@ C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Claims.UI\obj\Debug\
 C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Claims.UI\obj\Debug\Claims.UI.csproj.CoreCompileInputs.cache
 C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Claims.UI\obj\Debug\Claims.UI.exe
 C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Claims.UI\obj\Debug\Claims.UI.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Claims.UI\bin\Debug\ClaimsPOCO.dll
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Claims.UI\bin\Debug\ClaimsRepo.dll
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Claims.UI\bin\Debug\ClaimsPOCO.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Claims.UI\bin\Debug\ClaimsRepo.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Claims.UI\obj\Debug\Claims.UI.csproj.CopyComplete

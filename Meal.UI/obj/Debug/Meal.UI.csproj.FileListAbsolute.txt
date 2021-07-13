@@ -5,3 +5,8 @@ C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Meal.UI\obj\Debug\Me
 C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Meal.UI\obj\Debug\Meal.UI.csproj.CoreCompileInputs.cache
 C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Meal.UI\obj\Debug\Meal.UI.exe
 C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Meal.UI\obj\Debug\Meal.UI.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Meal.UI\bin\Debug\MenuItemPOCO.dll
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Meal.UI\bin\Debug\MenuItemRepo.dll
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Meal.UI\bin\Debug\MenuItemPOCO.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Meal.UI\bin\Debug\MenuItemRepo.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Meal.UI\obj\Debug\Meal.UI.csproj.CopyComplete
