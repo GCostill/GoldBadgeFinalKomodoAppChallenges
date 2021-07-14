@@ -40,7 +40,8 @@ namespace Claims.UI
                         CreateNewClaim();
                         break;
                     case "4":
-                        Console.WriteLine("Thank you for visiting!");
+                        Console.WriteLine("Thank you for visiting! Press any key to continue...");
+                        Console.ReadKey();
                         keepRunning = false;
                         break;
                     default:
@@ -85,7 +86,6 @@ namespace Claims.UI
             if(userInput == "y")
             {
                 _claimsRepo.RemoveClaimFromQueue();
-                //call current claim
             }
             else if(userInput == "n")
             {
@@ -168,7 +168,7 @@ namespace Claims.UI
             int newNum;
             while (!int.TryParse(newNumber, out newNum))
             {
-                Console.WriteLine("Bah! That is not a valid number!");
+                Console.WriteLine("Please input a valid number.");
             }
             return newNum;
         }

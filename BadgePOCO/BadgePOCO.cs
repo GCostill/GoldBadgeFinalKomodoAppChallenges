@@ -10,5 +10,15 @@ namespace BadgeClass.POCO
     {
         public int BadgeID { get; set; }
         public List<string> DoorList { get; set; }
+
+        public BadgePOCO()
+        {
+
+        }
+        public BadgePOCO(int badgeID, List<string> DoorList)
+        {
+            this.BadgeID = badgeID;
+            this.DoorList = DoorList;
+        }
     }
 }
