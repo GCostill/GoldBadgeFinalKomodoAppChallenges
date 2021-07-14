@@ -14,7 +14,7 @@ namespace ClaimsClass.POCO
     }
     public class ClaimsPOCO
     {
-        public int ClaimID { get; set; }
+        public string ClaimID { get; set; }
         public ClaimType ClaimType { get; set; }
         public string ClaimDescription { get; set; }
         public int ClaimAmount { get; set; }
@@ -24,7 +24,7 @@ namespace ClaimsClass.POCO
 
         public ClaimsPOCO() { }
 
-        public ClaimsPOCO(int claimID, ClaimType claimType, string claimDescription, int claimAmount, DateTime dateOfIncicent, DateTime dateofClaim, bool isClaimValid)
+        public ClaimsPOCO(string claimID, ClaimType claimType, string claimDescription, int claimAmount, DateTime dateOfIncicent, DateTime dateofClaim, bool isClaimValid)
         {
             ClaimID = claimID;
             ClaimType = claimType;

@@ -98,6 +98,21 @@ namespace Meal.UI
                 if (userResponse == "y")
                 {
                     _itemRepo.DeleteMenuItem(itemID);
+                    Console.WriteLine("Delete Successful.\n" +
+                        "Would you like to delete another menu item?(y/n)");
+                    string userInput = Console.ReadLine();
+                    if(userInput == "y")
+                    {
+                        DeleteExistingMenuItem();
+                    }
+                    if(userInput == "n")
+                    {
+                        Console.WriteLine("You will return to the main menu\n" +
+                            "Press any key to continue");
+                        Console.ReadKey();
+                        Console.Clear();
+                        Menu();
+                    }
                 }
                 else if (userResponse == "n")
                 {
@@ -105,18 +120,15 @@ namespace Meal.UI
                 }
                 else
                 {
-                    //call menu item 
+                    //call menu item again?
                     Console.WriteLine("plese enter y or n");
                 }
-                //where to put return true and return false
-                //give an option out
                 
             }
         }
         private void ViewAllMenuItems()
         {
             List<MenuItemPOCO> listOfMenuItems = _itemRepo.GetMenuItems();
-//returning pocos 
             if(!listOfMenuItems.Any())
             {
                 Console.WriteLine("There aren't any menu items made yet");
@@ -143,7 +155,6 @@ namespace Meal.UI
             }
             Console.WriteLine($"The new meal number is: {newNum}");
             return newNum;
-            //^^is this the correct return?
         }
     }
 }

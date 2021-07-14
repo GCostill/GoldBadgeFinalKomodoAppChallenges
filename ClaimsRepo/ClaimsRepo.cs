@@ -9,23 +9,34 @@ namespace ClaimsClass.Repo
 {
     public class ClaimsRepo
     {
-        private readonly List<ClaimsPOCO> _claimsRepo = new List<ClaimsPOCO>();
+        private readonly Queue<ClaimsPOCO> _claimsRepo = new Queue<ClaimsPOCO>();
 
         public bool CreateNewClaim(ClaimsPOCO claims)
         {
             if(claims != null)
             {
-                _claimsRepo.Add(claims);
+                _claimsRepo.Enqueue(claims);
                 return true;
             }
             return false;
         }
-
-        public List<ClaimsPOCO> DisplayAllClaims()
+        public bool RemoveClaimFromQueue(ClaimsPOCO claims)
+        {
+            if(claims != null)
+            {
+                _claimsRepo.Dequeue();
+                return true;
+            }
+            return false;
+        }
+        public Queue<ClaimsPOCO> DisplayAllClaims()
         {
             return _claimsRepo;
         }
 
-        //view next claim in queue
+        public ClaimsPOCO ViewNextClaim()
+        {
+            return _claimsRepo.Peek();
+        }
     }
 }
