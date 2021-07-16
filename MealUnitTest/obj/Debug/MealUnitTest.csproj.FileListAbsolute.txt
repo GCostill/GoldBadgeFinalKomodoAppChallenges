@@ -12,3 +12,7 @@ C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\MealUnitTest\obj\Deb
 C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\MealUnitTest\obj\Debug\MealUnitTest.csproj.CopyComplete
 C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\MealUnitTest\obj\Debug\MealUnitTest.dll
 C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\MealUnitTest\obj\Debug\MealUnitTest.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\MealUnitTest\bin\Debug\MenuItemPOCO.dll
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\MealUnitTest\bin\Debug\MenuItemRepo.dll
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\MealUnitTest\bin\Debug\MenuItemPOCO.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\MealUnitTest\bin\Debug\MenuItemRepo.pdb

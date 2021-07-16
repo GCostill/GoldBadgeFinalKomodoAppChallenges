@@ -5,3 +5,8 @@ C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Badge.UI\obj\Debug\B
 C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Badge.UI\obj\Debug\Badge.UI.csproj.CoreCompileInputs.cache
 C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Badge.UI\obj\Debug\Badge.UI.exe
 C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Badge.UI\obj\Debug\Badge.UI.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Badge.UI\bin\Debug\BadgePOCO.dll
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Badge.UI\bin\Debug\BadgeRepo.dll
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Badge.UI\bin\Debug\BadgePOCO.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Badge.UI\bin\Debug\BadgeRepo.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\Badge.UI\obj\Debug\Badge.UI.csproj.CopyComplete

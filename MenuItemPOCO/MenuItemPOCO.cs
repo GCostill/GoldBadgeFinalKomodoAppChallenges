@@ -8,7 +8,7 @@ namespace MealClass.POCO
 {
     public class MenuItemPOCO
     {
-        public int MealNumber { get; set; }
+        public decimal MealNumber { get; set; }
         public string MealName { get; set; }
         public string MealDescription { get; set; }
         public decimal MealPrice { get; set; }

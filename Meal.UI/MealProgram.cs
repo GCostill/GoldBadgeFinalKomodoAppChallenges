@@ -52,10 +52,10 @@ namespace Meal.UI
                         Console.WriteLine("Please enter a menu option number.");
                         break;
                 }
-            }
             Console.WriteLine("Please press any key to continue...");
             Console.ReadKey();
             Console.Clear();
+            }
         }
         private void CreateNewMenuItem()
         {
@@ -83,12 +83,25 @@ namespace Meal.UI
 
         private void DeleteExistingMenuItem()
         {
+            Console.Clear();
+            var listOfMenuItems = _itemRepo.GetMenuItems();
+            bool isEmpty = listOfMenuItems.Any();
+            if (!isEmpty)
+            {
+                Console.WriteLine("There are currently no menu items to delete.");
+                return;
+            }
+
+            Console.WriteLine("Here is a list of current menu items:\n" +
+                "--------------------------------------------");
+            ViewAllMenuItems();
             Console.WriteLine("What is the number of the menu item you want to delete?");
 
             int itemID = int.Parse(Console.ReadLine());
             MenuItemPOCO menuItem = _itemRepo.GetItemByNum(itemID);
             if(menuItem !=null)
             {
+                Console.Clear();
                 Console.WriteLine($"Meal Number: {menuItem.MealNumber}\n" +
                     $"Meal Name: {menuItem.MealName}\n" +
                     $"Meal Price: {menuItem.MealName}\n" +
@@ -141,15 +154,16 @@ namespace Meal.UI
                         $"Meal Name: {menuItem.MealName}\n" +
                         $"Meal Price: {menuItem.MealPrice}\n" +
                         $"Meal Desc: {menuItem.MealDescription}\n" +
-                        $"Ingredients: {menuItem.MealIngredientList}");
+                        $"Ingredients: {menuItem.MealIngredientList}\n" +
+                        $"---------------------------------------------");
                 }
             }
         }
 
-        private int ProperNumber(string newNumber)
+        private decimal ProperNumber(string newNumber)
         {
-            int newNum;
-            while (!int.TryParse(newNumber, out newNum))
+            decimal newNum;
+            while (!decimal.TryParse(newNumber, out newNum))
             {
                 Console.WriteLine("Bah! That is not a valid number!");
             }

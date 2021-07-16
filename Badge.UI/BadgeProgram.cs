@@ -11,8 +11,7 @@ namespace Badge.UI
     class BadgeProgram
     {
         private readonly BadgeRepo _badgeRepo = new BadgeRepo();
-        private readonly List<string> doorAccessList = new List<string>();
-        private readonly BadgePOCO newBadge = new BadgePOCO();
+        //private readonly List<string> doorAccessList = new List<string>();
         public void Run()
         {
             Menu();
@@ -28,7 +27,8 @@ namespace Badge.UI
                     "3. View list of all badges\n" +
                     "4. Exit program");
                 string userInput = Console.ReadLine();
-                switch (userInput) {
+                switch (userInput) 
+                {
                     case "1":
                         CreateNewBadge();
                         break;
@@ -39,37 +39,133 @@ namespace Badge.UI
                         DisplayAllBadges();
                         break;
                     case "4":
-                        Console.WriteLine("Have a good day! Press any key to continue...");
-                        Console.ReadKey();
                         keepRunning = false;
                         break;
                     default:
                         Console.WriteLine("Please enter a valid menu option.");
                         break;
                 }
+                Console.WriteLine("Press any key to continue..");
+                Console.ReadKey();
+                Console.Clear();
             }
         }
         private void CreateNewBadge()
         {
+            BadgePOCO newBadge = new BadgePOCO();
             Console.WriteLine("What is the number on the badge you would like to add?");
             newBadge.BadgeID = ProperNumber(Console.ReadLine());
 
-            AddDoorAccess();
+            //newBadge.DoorList.Add(AddDoorAccess);
+            newBadge.DoorList = AddDoorAccess(newBadge);
 
             _badgeRepo.CreateNewBadge(newBadge);
-
-            Console.WriteLine("");
-            //BadgePOCO newBadge = new BadgePOCO(newBadgeID, new List<string> { newDoorAccess,});
         }
         private void EditExistingBadge()
         {
+            var listOfBadges = _badgeRepo.ShowListOfBadgesAndDoorAccess();
+            bool isEmpty = listOfBadges.Any();
+            if (!isEmpty)
+            {
+                Console.WriteLine("There are currently no badges to be edited");
+                return;
+                //^this works like a break for loops
+            }
+            Console.WriteLine("What is the badge number to be updated?");
+            var badgeID = ProperNumber(Console.ReadLine());
+            BadgePOCO badgeUpdate =_badgeRepo.GetBadgeByID(badgeID);
+            
+            Console.WriteLine($"{badgeUpdate.BadgeID} has access to door(s) {badgeUpdate.DoorList}\n" +
+                $"What would you like to do?\n" +
+                $"1. Remove a door\n" +
+                $"2. Add a door/" +
+                $"3. Delete all doors");
+            string userInput = Console.ReadLine();
+            switch (userInput)
+            {
+                case "1":
+                    Console.WriteLine("Which door would you like to remove?");
+                    var doorDeleteInput = Console.ReadLine();
+                    if (badgeUpdate.DoorList.Contains(doorDeleteInput))
+                    {
+                        badgeUpdate.DoorList.Remove(doorDeleteInput);
+                        bool isSuccessful = _badgeRepo.UpdateExistingBadge(badgeID, badgeUpdate);
+                        if (isSuccessful)
+                        {
+                            Console.WriteLine("Door has been successfully removed\n" +
+                                $"{badgeUpdate.BadgeID} currently has access to door(s) {badgeUpdate.DoorList}");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Door has NOT been successfully removed");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Please input a valid door that is listed on the badge.");
+                    }
+                    Console.Clear();
+                    break;
+                case "2":
+                    Console.WriteLine("Which door would you like to add?");
+                    var doorAddInput = Console.ReadLine();
+                    if (badgeUpdate.DoorList.Contains(doorAddInput))
+                    {
+                        Console.WriteLine("The badge already has access to this door.");
+                    }
+                    else
+                    {
+                        badgeUpdate.DoorList.Add(doorAddInput);
+                        bool isSuccessful = _badgeRepo.UpdateExistingBadge(badgeID, badgeUpdate);
+                        if (isSuccessful)
+                        {
+                            Console.WriteLine("Door has been successfully added\n" +
+                                $"{badgeUpdate.BadgeID} currently has access to door(s) {badgeUpdate.DoorList}");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Door has NOT been successfully added");
+                        }
+                    }
+                    Console.Clear();
+                    break;
+                case "3":
+                    Console.WriteLine("Are you sure you want to delete all doors?(y/n)");
+                    var userDeleteAllInput = Console.ReadLine().ToLower();
+                    if(userDeleteAllInput == "y")
+                    {
+                        badgeUpdate.DoorList.Clear();
+                    }
+                    Console.Clear();
+                    break;
+                default:
+                    Console.WriteLine("Please enter a valid option.");
+                    Console.Clear();
+                    break;
+            }
 
         }
         private void DisplayAllBadges()
         {
-
+            List<BadgePOCO> listOfBadges = _badgeRepo.ShowListOfBadgesAndDoorAccess();
+            if (!listOfBadges.Any())
+            {
+                Console.WriteLine("There are currently no badges");
+            }
+            else
+            {
+                foreach(BadgePOCO badge in listOfBadges)
+                {
+                    DisplaySingleBadge(badge);
+                }
+            }
         }
-        private void AddDoorAccess()
+        private void DisplaySingleBadge(BadgePOCO badgeSingle)
+        {
+            Console.WriteLine($"{"Badge ID",-15}{"Door Access"}");
+            Console.WriteLine($"{badgeSingle.BadgeID,-15}{badgeSingle.DoorList}");
+        }
+        private List<string> AddDoorAccess(BadgePOCO newBadge)
         {
             Console.WriteLine("List a door that the badge will have access to:");
             string doorAccess = Console.ReadLine();
@@ -79,18 +175,19 @@ namespace Badge.UI
             string userInput = Console.ReadLine();
             if (userInput == "y")
             {
-                AddDoorAccess();
+                AddDoorAccess(newBadge);
             }
             else if (userInput == "n")
             {
                 Console.WriteLine("Returning to main menu. Press any key to continue..");
                 Console.ReadKey();
-                Menu();
+                Console.Clear();
             }
             else
             {
                 Console.WriteLine("Please input 'y' or 'n'");
             }
+            return newBadge.DoorList;
         }
         private int ProperNumber(string checkNum)
         {

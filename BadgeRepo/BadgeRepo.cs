@@ -22,10 +22,14 @@ namespace BadgeClass.Repo
             }
             return false;
         }
-        public Dictionary<int, List<string>> ShowListOfBadgesAndDoorAccess()
+        public List<BadgePOCO> ShowListOfBadgesAndDoorAccess()
         {
-            return _badgeDictionary;
+            return _listOfBadges;
         }
+        //public Dictionary<int, List<string>> ShowListOfBadgesAndDoorAccess()
+        //{
+        //    return _badgeDictionary;
+        //}
         public BadgePOCO GetBadgeByID(int id)
         {
             foreach (BadgePOCO badge in _listOfBadges)
@@ -48,15 +52,15 @@ namespace BadgeClass.Repo
             oldBadge.DoorList = updatedDoorList.DoorList;
             return true;
         }
-        public bool DeleteAllDoorsFromBadge(int id)
-        {
-            BadgePOCO badge = GetBadgeByID(id);
-            if (badge != null)
-            {
-                badge.DoorList.Clear();
-                return true;
-            }
-            return false;
-        }
+        //public bool DeleteAllDoorsFromBadge(int id)
+        //{
+        //    BadgePOCO badge = GetBadgeByID(id);
+        //    if (badge != null)
+        //    {
+        //        badge.DoorList.Clear();
+        //        return true;
+        //    }
+        //    return false;
+        //}
     }
 }

@@ -49,11 +49,21 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="MealClassRepoTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MenuItemPOCO\MealClass.POCO.csproj">
+      <Project>{0E1269BC-5621-431F-AF40-E66212940196}</Project>
+      <Name>MealClass.POCO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MenuItemRepo\MealClass.Repo.csproj">
+      <Project>{2fbc75fc-da50-472d-b307-4762913f809a}</Project>
+      <Name>MealClass.Repo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
