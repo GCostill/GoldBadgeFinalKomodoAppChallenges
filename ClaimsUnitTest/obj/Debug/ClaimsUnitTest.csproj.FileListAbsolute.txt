@@ -12,3 +12,7 @@ C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\ClaimsUnitTest\obj\D
 C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\ClaimsUnitTest\obj\Debug\ClaimsUnitTest.csproj.CopyComplete
 C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\ClaimsUnitTest\obj\Debug\ClaimsUnitTest.dll
 C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\ClaimsUnitTest\obj\Debug\ClaimsUnitTest.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\ClaimsUnitTest\bin\Debug\ClaimsPOCO.dll
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\ClaimsUnitTest\bin\Debug\ClaimsRepo.dll
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\ClaimsUnitTest\bin\Debug\ClaimsPOCO.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\ClaimsUnitTest\bin\Debug\ClaimsRepo.pdb

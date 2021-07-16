@@ -12,3 +12,7 @@ C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\BadgeUnitTest\obj\De
 C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\BadgeUnitTest\obj\Debug\BadgeUnitTest.csproj.CopyComplete
 C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\BadgeUnitTest\obj\Debug\BadgeUnitTest.dll
 C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\BadgeUnitTest\obj\Debug\BadgeUnitTest.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\BadgeUnitTest\bin\Debug\BadgePOCO.dll
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\BadgeUnitTest\bin\Debug\BadgeRepo.dll
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\BadgeUnitTest\bin\Debug\BadgePOCO.pdb
+C:\Eleven Fifty Academy\DotNETProjects\GoldBadgeFinalKomodo\BadgeUnitTest\bin\Debug\BadgeRepo.pdb

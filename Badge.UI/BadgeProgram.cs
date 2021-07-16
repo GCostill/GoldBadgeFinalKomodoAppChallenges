@@ -56,7 +56,6 @@ namespace Badge.UI
             Console.WriteLine("What is the number on the badge you would like to add?");
             newBadge.BadgeID = ProperNumber(Console.ReadLine());
 
-            //newBadge.DoorList.Add(AddDoorAccess);
             newBadge.DoorList = AddDoorAccess(newBadge);
 
             _badgeRepo.CreateNewBadge(newBadge);
