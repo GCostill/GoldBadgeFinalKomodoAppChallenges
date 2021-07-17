@@ -9,37 +9,38 @@ namespace BadgeClass.Repo
 {
     public class BadgeRepo
     {
-        private readonly List<BadgePOCO> _listOfBadges = new List<BadgePOCO>();
-        private readonly Dictionary<int, List<string>> _badgeDictionary = new Dictionary<int, List<string>>();
+        private readonly Dictionary<int, Badge> _badgeDictionary = new Dictionary<int, Badge>();
         // key value pair will be Badge ID and List of Door Names
-        public bool CreateNewBadge(BadgePOCO badge)
+        private int _count;
+        public bool CreateNewBadge(Badge badge)
         {
             if(badge != null)
             {
-                _badgeDictionary.Add(badge.BadgeID, badge.DoorList);
-                _listOfBadges.Add(badge);
+                _count++;
+                badge.BadgeID = _count;
+                _badgeDictionary.Add(badge.BadgeID, badge);
                 return true;
             }
             return false;
         }
-        public List<BadgePOCO> ShowListOfBadgesAndDoorAccess()
+        public Dictionary<int, Badge> ShowListOfBadgesAndDoorAccess()
         {
-            return _listOfBadges;
+            return _badgeDictionary;
         }
-        public BadgePOCO GetBadgeByID(int id)
+        public Badge GetBadgeByID(int id)
         {
-            foreach (BadgePOCO badge in _listOfBadges)
+            foreach (var badge in _badgeDictionary)
             {
-                if(badge.BadgeID == id)
+                if(badge.Key == id)
                 {
-                    return badge;
+                    return badge.Value;
                 }
             }
             return null;
         }
-        public bool UpdateExistingBadge(int newID, BadgePOCO updatedDoorList)
+        public bool UpdateExistingBadge(int newID, Badge updatedDoorList)
         {
-            BadgePOCO oldBadge = GetBadgeByID(newID);
+            Badge oldBadge = GetBadgeByID(newID);
             if(oldBadge == null)
             {
                 return false;

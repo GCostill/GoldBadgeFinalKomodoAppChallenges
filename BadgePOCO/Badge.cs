@@ -6,18 +6,17 @@ using System.Threading.Tasks;
 
 namespace BadgeClass.POCO
 {
-    public class BadgePOCO
+    public class Badge
     {
         public int BadgeID { get; set; }
         public List<string> DoorList { get; set; } = new List<string>();
 
-        public BadgePOCO()
+        public Badge()
         {
 
         }
-        public BadgePOCO(int badgeID, List<string> DoorList)
+        public Badge(List<string> DoorList)
         {
-            this.BadgeID = badgeID;
             this.DoorList = DoorList;
         }
     }

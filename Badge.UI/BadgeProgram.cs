@@ -52,8 +52,8 @@ namespace Badge.UI
         }
         private void CreateNewBadge()
         {
-            BadgePOCO newBadge = new BadgePOCO();
-            Console.WriteLine("What is the number on the badge you would like to add?");
+            BadgeClass.POCO.Badge newBadge = new BadgeClass.POCO.Badge();
+            Console.WriteLine("What is the number of the badge you would like to add?");
             newBadge.BadgeID = ProperNumber(Console.ReadLine());
 
             newBadge.DoorList = AddDoorAccess(newBadge);
@@ -72,7 +72,7 @@ namespace Badge.UI
             }
             Console.WriteLine("What is the badge number to be updated?");
             var badgeID = ProperNumber(Console.ReadLine());
-            BadgePOCO badgeUpdate =_badgeRepo.GetBadgeByID(badgeID);
+            BadgeClass.POCO.Badge badgeUpdate = _badgeRepo.GetBadgeByID(badgeID);
             
             Console.WriteLine($"{badgeUpdate.BadgeID} has access to door(s) {badgeUpdate.DoorList}\n" +
                 $"What would you like to do?\n" +
@@ -146,25 +146,36 @@ namespace Badge.UI
         }
         private void DisplayAllBadges()
         {
-            List<BadgePOCO> listOfBadges = _badgeRepo.ShowListOfBadgesAndDoorAccess();
+            var listOfBadges = _badgeRepo.ShowListOfBadgesAndDoorAccess();
             if (!listOfBadges.Any())
             {
                 Console.WriteLine("There are currently no badges");
             }
             else
             {
-                foreach(BadgePOCO badge in listOfBadges)
+                foreach(var badge in listOfBadges)
                 {
-                    DisplaySingleBadge(badge);
+                    DisplaySingleBadge(badge.Value);
                 }
             }
         }
-        private void DisplaySingleBadge(BadgePOCO badgeSingle)
+        private void DisplaySingleBadge(BadgeClass.POCO.Badge badgeSingle)
         {
-            Console.WriteLine($"{"Badge ID",-15}{"Door Access"}");
-            Console.WriteLine($"{badgeSingle.BadgeID,-15}{badgeSingle.DoorList}");
+            Console.WriteLine($"Badge ID:");
+            Console.WriteLine($"{badgeSingle.BadgeID}\n");
+            Console.WriteLine("DoorAccess:");
+            DisplayDoors(badgeSingle.DoorList);
         }
-        private List<string> AddDoorAccess(BadgePOCO newBadge)
+        private void DisplayDoors(List<string> badgeDoors)
+        {
+            foreach(string door in badgeDoors)
+            {
+                Console.WriteLine($"{door}");
+                //return badgeDoors.DoorList;
+            }
+            Console.WriteLine("-----------------------------");
+        }
+        private List<string> AddDoorAccess(BadgeClass.POCO.Badge newBadge)
         {
             Console.WriteLine("List a door that the badge will have access to:");
             string doorAccess = Console.ReadLine();

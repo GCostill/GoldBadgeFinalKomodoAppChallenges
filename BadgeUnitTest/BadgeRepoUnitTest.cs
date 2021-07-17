@@ -13,13 +13,13 @@ namespace BadgeUnitTest
         [TestInitialize]
         public void Arrange()
         {
-            BadgePOCO badge = new BadgePOCO(61, new System.Collections.Generic.List<string>(5));
+            Badge badge = new Badge(new System.Collections.Generic.List<string>{"A1","B4"});
             _repo.CreateNewBadge(badge);
         }
         [TestMethod]
         public void Create_IsNull_ReturnTrue()
         {
-            BadgePOCO badge = null;
+            Badge badge = null;
             BadgeRepo repo = new BadgeRepo();
 
             bool result = repo.CreateNewBadge(badge);
@@ -29,7 +29,7 @@ namespace BadgeUnitTest
         [TestMethod]
         public void Create_IsNotNull_ReturnFalse()
         {
-            BadgePOCO badge = new BadgePOCO(123, new System.Collections.Generic.List<string>(2));
+            Badge badge = new Badge(new System.Collections.Generic.List<string> { "A1", "B4" });
             BadgeRepo repo = new BadgeRepo();
 
             bool result = repo.CreateNewBadge(badge);
@@ -39,27 +39,26 @@ namespace BadgeUnitTest
         [TestMethod]
         public void GetByID_BadgeExists_ReturnBadge()
         {
-            int num = 61;
+            int num = 1;
 
-            BadgePOCO result = _repo.GetBadgeByID(num);
-
+            Badge result = _repo.GetBadgeByID(num);
             Assert.IsNotNull(result);
             Assert.AreEqual(result.BadgeID, num);
         }
         [TestMethod]
         public void GetByID_BadgeDoesNotExist_ReturnNull()
         {
-            int num = 52;
+            int num = 209;
 
-            BadgePOCO result = _repo.GetBadgeByID(num);
+            Badge result = _repo.GetBadgeByID(num);
 
             Assert.IsNull(result);
         }
         [TestMethod]
         public void Update_BadgeExists_ReturnTrue()
         {
-            int num = 61;
-            BadgePOCO updateBadge = new BadgePOCO(61, new System.Collections.Generic.List<string>(1));
+            int num = 1;
+            Badge updateBadge = new Badge(new System.Collections.Generic.List<string> { "A2", "B4" });
 
             bool result = _repo.UpdateExistingBadge(num, updateBadge);
 
@@ -69,7 +68,7 @@ namespace BadgeUnitTest
         public void Update_BadgeDoesNotExist_ReturnFalse()
         {
             int num = 1234;
-            BadgePOCO updateBadge = new BadgePOCO(61, new System.Collections.Generic.List<string>(1));
+            Badge updateBadge = new Badge(new System.Collections.Generic.List<string> { "A2", "B4" });
 
             bool result = _repo.UpdateExistingBadge(num, updateBadge);
 
